@@ -1,7 +1,7 @@
 {
-  "name": "pdf-store",
+  "name": "fastify-ts-template",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
     "build": "tsc -p tsconfig.json",
