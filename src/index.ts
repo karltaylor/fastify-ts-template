@@ -2,7 +2,9 @@ import fastify from "fastify";
 
 const server = fastify();
 
-server.get("/", (request, reply) => reply.send({ ok: true }));
+server.get("/", (request, reply) =>
+  reply.send({ service: "fast-fy-ts-template" })
+);
 
 const port = process.env.PORT ? parseInt(process.env.PORT) : 8080;
 
