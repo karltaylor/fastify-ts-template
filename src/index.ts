@@ -1,4 +1,6 @@
+import 'dotenv/config'
 import fastify from "fastify";
+
 import { env } from "./env";
 
 const server = fastify();
