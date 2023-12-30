@@ -1,14 +1,13 @@
 import fastify from "fastify";
+import { env } from "./env";
 
 const server = fastify();
 
-server.get("/", (request, reply) =>
+server.get("/", (request, reply) => 
   reply.send({ service: "fast-fy-ts-template" })
 );
 
-const port = process.env.PORT ? parseInt(process.env.PORT) : 8080;
-
-server.listen({ port }, (err, address) => {
+server.listen({ port: env.PORT }, (err, address) => {
   if (err) {
     console.error(err);
     process.exit(1);
