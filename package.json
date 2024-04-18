@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsup src",
     "start": "node dist/index.js",
     "dev": "nodemon src/index.ts"
   },
@@ -19,6 +19,7 @@
     "nodemon": "^2.0.22",
     "prettier": "^3.1.1",
     "prettier-plugin-organize-imports": "^3.2.4",
+    "tsup": "^8.0.2",
     "vite-node": "^0.31.0"
   }
 }
